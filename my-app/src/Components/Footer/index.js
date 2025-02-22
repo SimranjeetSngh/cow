@@ -1,12 +1,32 @@
-import React from 'react';
-import './styles.css'; // Import your styles
+import React, { useEffect, useState } from "react";
+import "./styles.css"; // Import the footer styles
 
 const Footer = () => {
-  return (
-    <footer style={{ backgroundColor: '#1e4356', color: 'white', textAlign: 'center', padding: '10px 0' }}>
-      <p>&copy; {new Date().getFullYear()} COW. All rights reserved.</p>
-    </footer>
-  );
+    const [bgColor, setBgColor] = useState("transparent");
+
+    useEffect(() => {
+        const updateFooterColor = () => {
+            let sections = document.querySelectorAll("section");
+            let footer = document.getElementById("footer");
+
+            sections.forEach(section => {
+                let rect = section.getBoundingClientRect();
+                if (rect.bottom >= window.innerHeight / 2) {
+                    let bgColor = window.getComputedStyle(section).backgroundColor;
+                    setBgColor(bgColor);
+                }
+            });
+        };
+
+        window.addEventListener("scroll", updateFooterColor);
+        return () => window.removeEventListener("scroll", updateFooterColor);
+    }, []);
+
+    return (
+        <footer id="footer" style={{ background: bgColor }}>
+            &copy; {new Date().getFullYear()} COW. All rights reserved.
+        </footer>
+    );
 };
 
 export default Footer;
