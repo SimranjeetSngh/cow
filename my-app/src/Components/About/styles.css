@@ -1,0 +1,216 @@
+.about-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.about-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  position: relative;
+  scroll-snap-align: none;
+}
+
+.overlay {
+  padding: 20px;
+  text-align: left;
+  color: white;
+  border-radius: 10px;
+  font-family: "Helvetica Neue LT Com", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+}
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+/* Custom styling for the third section */
+.about-section-custom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.custom-overlay {
+  padding: 20px;
+  color: white;
+  max-width: 50%;
+}
+
+.custom-overlay h1 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Helvetica Neue LT Com", sans-serif;
+}
+
+.custom-overlay h2,
+.custom-overlay h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Helvetica Neue LT Com", sans-serif;
+}
+
+.custom-overlay p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Helvetica Neue LT Com", sans-serif;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .overlay,
+  .custom-overlay {
+    max-width: 80%;
+    padding: 1.5rem;
+  }
+
+  .custom-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .custom-overlay h2,
+  .custom-overlay h3 {
+    font-size: 1.5rem;
+  }
+
+  .custom-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    height: auto;
+    padding: 4rem 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section-custom {
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .overlay,
+  .custom-overlay {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .custom-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .custom-overlay h2,
+  .custom-overlay h3 {
+    font-size: 1.4rem;
+  }
+
+  .custom-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay,
+  .custom-overlay {
+    max-width: 95%;
+    padding: 0.8rem;
+  }
+
+  .custom-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .custom-overlay h2,
+  .custom-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .custom-overlay p {
+    font-size: 0.9rem;
+  }
+}
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+.brand-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .dialog-box {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .close-button {
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+  }
+}
+
+/* Underline and Text Color for Founder's Previous Work */
+.custom-overlay a {
+  color: white;
+  text-decoration: underline;
+}
+
+.custom-overlay span {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
