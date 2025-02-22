@@ -54,8 +54,8 @@ const ContactUs = () => {
             <select name="topic" value={formData.topic} onChange={handleChange} required>
             <option value="Topic">Topic</option>
             <option value="New Projects">New Projects</option>
-            <option value="General queries">General queries</option>
-            <option value="Say hello">Say hello</option>
+            <option value="General queries">General Queries</option>
+            <option value="Say hello">Say Hello</option>
           </select>
             </div>
             <textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange} required />
