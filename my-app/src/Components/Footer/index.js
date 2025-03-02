@@ -7,7 +7,6 @@ const Footer = () => {
     useEffect(() => {
         const updateFooterColor = () => {
             let sections = document.querySelectorAll("section");
-            let footer = document.getElementById("footer");
 
             sections.forEach(section => {
                 let rect = section.getBoundingClientRect();

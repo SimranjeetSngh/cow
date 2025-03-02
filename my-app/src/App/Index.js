@@ -8,7 +8,6 @@ import ServicePage from "../Components/Services";
 import Footer from "../Components/Footer";
 
 const CowApp = () => {
-  const [loading, setLoading] = useState(true);
 
   return (
 
