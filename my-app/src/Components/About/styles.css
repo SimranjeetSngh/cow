@@ -11,34 +11,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  scroll-snap-align: start;
   position: relative;
-  scroll-snap-align: none;
+  scroll-snap-align: start;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers section without distortion */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .overlay {
   padding: 20px;
   text-align: left;
   color: white;
+
   border-radius: 10px;
   font-family: "Helvetica Neue LT Com", sans-serif;
   font-weight: 900;
   font-size: 36px;
+  position: relative;
+  z-index: 1;
 }
+
+/* Remove the ::before pseudo-element since we're using <picture> now */
 .about-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+  display: none;
 }
+
 /* Custom styling for the third section */
 .about-section-custom {
   display: flex;
@@ -72,8 +76,9 @@
   line-height: 1.5;
   font-family: "Helvetica Neue LT Com", sans-serif;
 }
+
 /* RESPONSIVE DESIGN */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .overlay,
   .custom-overlay {
     max-width: 80%;
@@ -94,7 +99,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-section {
     height: auto;
     padding: 4rem 1rem;
@@ -111,6 +116,7 @@
   .custom-overlay {
     max-width: 90%;
     padding: 1rem;
+     font-size: 26px;
   }
 
   .custom-overlay h1 {
@@ -147,6 +153,8 @@
     font-size: 0.9rem;
   }
 }
+
+/* Dialog Styles (Unchanged) */
 .dialog-overlay {
   position: fixed;
   top: 0;
@@ -189,7 +197,6 @@
   margin-bottom: 15px;
 }
 
-/* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
   .dialog-box {
     padding: 15px;
@@ -203,12 +210,7 @@
   }
 }
 
-/* Underline and Text Color for Founder's Previous Work */
-.custom-overlay a {
-  color: white;
-  text-decoration: underline;
-}
-
+.custom-overlay a,
 .custom-overlay span {
   color: white;
   text-decoration: underline;
