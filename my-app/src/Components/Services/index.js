@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import serviceBg from "../../Images/3.png"; 
 
 const ServicePage = () => {
   return (
