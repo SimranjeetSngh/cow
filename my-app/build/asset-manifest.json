@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c75b73af.css",
+    "main.js": "/static/js/main.c2c7ccea.js",
+    "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
+    "static/media/3.png": "/static/media/3.b74d4b6449a5c1c55a1e.png",
+    "static/media/farmerCow.png": "/static/media/farmerCow.840e899060cb4a012fc2.png",
+    "static/media/Hp.jpg": "/static/media/Hp.6fc21090ddedeaaf1532.jpg",
+    "static/media/Brands.jpg": "/static/media/Brands.41a985d2714c8c62facf.jpg",
+    "static/media/about1.png": "/static/media/about1.b930db66fae468d9a924.png",
+    "static/media/4.jpg": "/static/media/4.3b6d38106e94a150a9c9.jpg",
+    "static/media/about3.png": "/static/media/about3.ead0bac28f2c3e46abd3.png",
+    "static/media/servicesSD.png": "/static/media/servicesSD.6c84bd070f77c6e7c53b.png",
+    "static/media/aboutus2.png": "/static/media/aboutus2.5f833dce143d1c149cf5.png",
+    "static/media/cowChef.jpg": "/static/media/cowChef.aa3b8f8f0759e6f89fbb.jpg",
+    "index.html": "/index.html",
+    "main.c75b73af.css.map": "/static/css/main.c75b73af.css.map",
+    "main.c2c7ccea.js.map": "/static/js/main.c2c7ccea.js.map",
+    "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c75b73af.css",
+    "static/js/main.c2c7ccea.js"
+  ]
+}
