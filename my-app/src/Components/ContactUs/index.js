@@ -44,7 +44,7 @@ const ContactUs = () => {
       return (
         <div className="contact-container">
           <h1>Contact Cow</h1>
-          <form ref={form} onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit} className='contact-form'>
           <div className="form-group">
               <input type="text" name="user_name" placeholder="Name" value={formData.user_name} onChange={handleChange} required />
               <input type="email" name="user_email" placeholder="Email" value={formData.user_email} onChange={handleChange} required />
