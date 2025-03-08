@@ -19,8 +19,7 @@ function About() {
       {/* Section 1 */}
       <section className="about-section">
         <picture>
-          <source media="(max-width: 1023px)" srcset={phoneAbout1} />
-          <source media="(min-width: 1024px)" srcset={desktopAbout1} />
+          <source  srcset={desktopAbout1} />
           <img src={desktopAbout1} alt="Section 1 Background" className="background-image" />
         </picture>
         <div className="overlay">
@@ -34,8 +33,7 @@ function About() {
       {/* Section 2 */}
       <section className="about-section">
         <picture>
-          <source media="(max-width: 1023px)" srcset={phoneAbout2} />
-          <source media="(min-width: 1024px)" srcset={desktopAbout2} />
+          <source  srcset={desktopAbout2} />
           <img src={desktopAbout2} alt="Section 2 Background" className="background-image" />
         </picture>
         <div className="overlay">
@@ -49,8 +47,7 @@ function About() {
       {/* Section 3 */}
       <section className="about-section about-section-custom">
         <picture>
-          <source media="(max-width: 1023px)" srcset={phoneAbout3} />
-          <source media="(min-width: 1024px)" srcset={desktopAbout3} />
+          <source  srcset={desktopAbout3} />
           <img src={desktopAbout3} alt="Section 3 Background" className="background-image" />
         </picture>
         <div className="custom-overlay">
