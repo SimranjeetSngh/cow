@@ -1,7 +1,7 @@
 .service-container {
     width: 100%;
     height: 100vh;
-    background: url("../../Images/3.png") no-repeat center center/cover;
+    background: url("../../Images/Services.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
