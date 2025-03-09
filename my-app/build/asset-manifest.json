@@ -1,25 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e06ebc0.css",
-    "main.js": "/static/js/main.806ceb59.js",
+    "main.css": "/static/css/main.d5d8b3e5.css",
+    "main.js": "/static/js/main.36039360.js",
     "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
-    "static/media/3.png": "/static/media/3.b74d4b6449a5c1c55a1e.png",
-    "static/media/farmerCow.png": "/static/media/farmerCow.840e899060cb4a012fc2.png",
+    "static/media/Services.png": "/static/media/Services.d548a8641e3409d19e28.png",
+    "static/media/About us 1.png": "/static/media/About us 1.bfd3f80a19b4506bf548.png",
+    "static/media/About us 2.png": "/static/media/About us 2.97720de846083e38fc26.png",
+    "static/media/About us 3.png": "/static/media/About us 3.12d24da21afc75708965.png",
     "static/media/Hp.jpg": "/static/media/Hp.6fc21090ddedeaaf1532.jpg",
-    "static/media/Brands.jpg": "/static/media/Brands.41a985d2714c8c62facf.jpg",
-    "static/media/about1.png": "/static/media/about1.b930db66fae468d9a924.png",
-    "static/media/4.jpg": "/static/media/4.3b6d38106e94a150a9c9.jpg",
-    "static/media/about3.png": "/static/media/about3.ead0bac28f2c3e46abd3.png",
-    "static/media/servicesSD.png": "/static/media/servicesSD.6c84bd070f77c6e7c53b.png",
-    "static/media/aboutus2.png": "/static/media/aboutus2.5f833dce143d1c149cf5.png",
-    "static/media/cowChef.jpg": "/static/media/cowChef.aa3b8f8f0759e6f89fbb.jpg",
+    "static/media/COW Design-05.jpg": "/static/media/COW Design-05.4b29c09f8245a8928d47.jpg",
     "index.html": "/index.html",
-    "main.3e06ebc0.css.map": "/static/css/main.3e06ebc0.css.map",
-    "main.806ceb59.js.map": "/static/js/main.806ceb59.js.map",
+    "main.d5d8b3e5.css.map": "/static/css/main.d5d8b3e5.css.map",
+    "main.36039360.js.map": "/static/js/main.36039360.js.map",
     "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e06ebc0.css",
-    "static/js/main.806ceb59.js"
+    "static/css/main.d5d8b3e5.css",
+    "static/js/main.36039360.js"
   ]
 }

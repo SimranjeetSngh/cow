@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./styles.css";
-import desktopAbout1 from "../../Images/4.jpg"; // Desktop version
-import desktopAbout2 from "../../Images/farmerCow.png";
-import desktopAbout3 from "../../Images/cowChef.jpg";
-import brandImage from "../../Images/brands/Brands.jpg";
+import desktopAbout1 from "../../Images/About us 1.png"; // Desktop version
+import desktopAbout2 from "../../Images/About us 2.png";
+import desktopAbout3 from "../../Images/About us 3.png";
+import brandImage from "../../Images/brands/COW Design-05.jpg";
 
 function About() {
   const [isDialogOpen, setDialogOpen] = useState(false);
