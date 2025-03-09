@@ -11,7 +11,6 @@
   .service-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Adds contrast for text */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +80,6 @@
   
   @media (max-width: 480px) {
     .service-container {
-      height: auto;
       padding: 3rem 0;
     }
     .service-content {

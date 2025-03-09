@@ -21,8 +21,8 @@ function About() {
         </picture>
         <div className="overlay">
           <p>
-            We are not an AD agency, <br /> but an ADD agency that adds <br /> long-term value to elevate
-            <br /> your brands to greater heights.
+            We are not an AD agency, <br /> but an ADD agency that adds long-term value 
+            <br />to elevate your brands to greater heights.
           </p>
         </div>
       </section>
@@ -35,8 +35,8 @@ function About() {
         </picture>
         <div className="overlay">
           <p>
-            Boosting your business<br />is our business. Because nothing <br /> the cow produces ever go to waste,
-            <br /> even the waste is precious manure.
+            Boosting your businessis our business.<br /> Because nothing the cow produces ever go to waste,
+            <br />even the waste is precious manure.
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ function About() {
         </picture>
         <div className="custom-overlay">
           <h1>SATYEN PARAB</h1>
-          <h2>Founder and Chief Cow</h2>
+          <h2>Founder and Chief Creative Cow</h2>
           <p>
             Assistant Director (Movies)<br />
             Playwright, Art Director, Director, Actor (Theater)
