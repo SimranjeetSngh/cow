@@ -4,13 +4,21 @@ import desktopAbout1 from "../../Images/About us 1.png"; // Desktop version
 import desktopAbout2 from "../../Images/About us 2.png";
 import desktopAbout3 from "../../Images/About us 3.png";
 import brandImage from "../../Images/brands/COW Design-05.jpg";
-
+import { Dialog, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 function About() {
   const [isDialogOpen, setDialogOpen] = useState(false);
+  const [isMediaDialogOpen, setMediaDialog] = useState(false);
 
   const openDialog = () => setDialogOpen(true);
   const closeDialog = () => setDialogOpen(false);
 
+  const openMediaDialog = () => {
+    setMediaDialog(true)
+  }
+ const closeMediaDialog = () => {
+   setMediaDialog(false)
+ }
   return (
     <div className="about-container">
       {/* Section 1 */}
@@ -54,20 +62,14 @@ function About() {
             Assistant Director (Movies)<br />
             Playwright, Art Director, Director, Actor (Theater)
           </p>
-          <h3>Ex-Agencies:</h3>
+          <h3>Previous Agencies:</h3>
           <p>
             Bates Enterprise,<br /> Publicis India,<br /> Everest Brand Solutions,<br />
             Scarecrow Communications, <br />Salt Brand Solutions
           </p>
-          <h3>Awards & Recognitions:</h3>
+          <h3>Awards & Achievements:</h3>
           <p>
-            Gold, Silver, and Bronze: Big Bang Awards (Bangalore Ad Club)<br />
-            Silver and Bronze: MADDYs Awards (Madras Ad Club)<br />
-            8 Finalists: Goafest Abbys (The Advertising Club)<br />
-            Work showcased as the best in Asia within Bates Asia Network<br />
-            The Fink Tank Logo Design shortlisted in a worldwide contest<br />
-            Best Writer, Best Art Director, Best Actor at State-Level Theater Awards<br />
-            State Art Awards by Maharashtra Government<br />
+          Satyen has received numerous prestigious national awards and international recognitions, including Gold, Silver, and Bronze at the Big Bang Awards (Bangalore Ad Club), MADDYs Awards (Madras Ad Club), and Goafest Abbys. His work has been showcased as the best in the Asia region within the Bates Asia Network, and the Fink Tank logo design was shortlisted in a global contest. Additionally, he has earned accolades such as Best Writer, Best Art Director, and Best Actor at State-Level Theater Awards, along with prestigious State Art Awards from the Maharashtra Government.
           </p>
           <p>
             <a href="https://www.behance.net/SatyenParab" target="_blank" rel="noopener noreferrer" style={{ color: "white", textDecoration: "underline" }}>
@@ -78,22 +80,46 @@ function About() {
               Brands
             </span>
             <br />
-            Media
+            <span style={{ color: "white", textDecoration: "underline", cursor: "pointer" }} onClick={openMediaDialog}>
+              Media
+            </span>
           </p>
         </div>
       </section>
 
       {/* Dialog Box for Brands */}
-      {isDialogOpen && (
-        <div className="dialog-overlay" onClick={closeDialog}>
-          <div className="dialog-box" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closeDialog}>
-              <span className="close-icon">×</span>
-            </button>
-            <img src={brandImage} alt="Brand" className="brand-image" />
-          </div>
-        </div>
-      )}
+      <Dialog open={isDialogOpen} onClose={closeDialog} fullWidth maxWidth="lg" classes={{ paper: "dialog" }} icon={true}>
+      <img src={brandImage} alt="Brand" className="brand-image" />
+      
+        </Dialog>
+      
+    {/* Dialog Box for Media */}
+    <Dialog open={isMediaDialogOpen} onClose={closeMediaDialog} fullWidth maxWidth="lg" classes={{ paper: "media-dialog" }}>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>Silicon India</AccordionSummary>
+          <AccordionDetails>
+            <iframe
+              src="https://www.siliconindia.com/profiles/satyen-parab-m1bA39L5.html"
+              title="Silicon India"
+              width="100%"
+              height="500px"
+              style={{ border: "none" }}
+            ></iframe>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>Adgully</AccordionSummary>
+          <AccordionDetails>
+            <iframe
+              src="https://www.adgully.com/agvoice-celebrating-100-years-54339.html"
+              title="Adgully"
+              width="100%"
+              height="500px"
+              style={{ border: "none" }}
+            ></iframe>
+          </AccordionDetails>
+        </Accordion>
+      </Dialog>
     </div>
   );
 }

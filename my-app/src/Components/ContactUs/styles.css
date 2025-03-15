@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -13,15 +14,16 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: "Helvetica Neue LT Com", sans-serif;
-  align-self: flex-start; /* Align heading to the left */
+  text-align: left;
   width: 70%;
+  margin-bottom: 20px;
 }
 
 .contact-form {
-  width: 70%; /* Increased width */
+  width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .form-group {
@@ -31,25 +33,25 @@ h1 {
 
 input, textarea {
   width: 48%;
-  padding: 10px;
+  padding: 15px;
   background: none;
   border: none;
   border-bottom: 1px solid white;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Helvetica Neue LT Com", sans-serif;
 }
 
 select {
   width: 48%;
-  padding: 10px;
+  padding: 15px;
   background-color: black;
   border-bottom: 1px solid #ccc;
   border-right: 0;
   border-left: 0;
   border-top: 0;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Helvetica Neue LT Com", sans-serif;
   appearance: none;
   background-size: 12px;
@@ -57,13 +59,13 @@ select {
 
 textarea {
   width: 100%;
-  height: 100px;
+  height: 150px;
   font-family: "Helvetica Neue LT Com", sans-serif;
 }
 
 button {
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   background-color: white;
   color: black;
   font-size: 1.2rem;
@@ -74,7 +76,8 @@ button {
 
 .contact-info {
   width: 70%;
-  margin-top: 20px;
+  margin-top: 30px;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -86,11 +89,7 @@ button {
     flex-direction: column;
   }
 
-  select {
-    width: 100%;
-  }
-
-  input {
+  select, input {
     width: 100%;
   }
 
@@ -98,10 +97,12 @@ button {
     width: 100%;
     text-align: center;
   }
+
   .contact-container {
     align-items: center;
   }
-  .contact-info{
+
+  .contact-info {
     width: 100%;
     text-align: center;
   }
