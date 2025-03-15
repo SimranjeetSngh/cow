@@ -69,11 +69,19 @@ function About() {
           </p>
           <h3>Awards & Achievements:</h3>
           <p>
-          Satyen has received numerous prestigious national awards and international recognitions, including Gold, Silver, and Bronze at the Big Bang Awards (Bangalore Ad Club), MADDYs Awards (Madras Ad Club), and Goafest Abbys. His work has been showcased as the best in the Asia region within the Bates Asia Network, and the Fink Tank logo design was shortlisted in a global contest. Additionally, he has earned accolades such as Best Writer, Best Art Director, and Best Actor at State-Level Theater Awards, along with prestigious State Art Awards from the Maharashtra Government.
+          Satyen has received numerous prestigious national awards and international<br/>
+          recognitions, including Gold, Silver, and Bronze at the Big Bang Awards<br/>
+          (Bangalore Ad Club), MADDYs Awards (Madras Ad Club), and Goafest Abbys.<br/> 
+          His work has been showcased as the best in the Asia region within the<br/>
+          Bates Asia Network, and the Fink Tank logo design was shortlisted in a<br/>
+          global contest. Additionally, he has earned accolades such as Best Writer,<br/>
+          Best Art Director, and Best Actor at State-Level Theater Awards, along with<br/> 
+          prestigious State Art Awards from the Maharashtra Government.
+
           </p>
           <p>
             <a href="https://www.behance.net/SatyenParab" target="_blank" rel="noopener noreferrer" style={{ color: "white", textDecoration: "underline" }}>
-              Founder's previous work
+              Founder's previous agencies work
             </a>
             <br />
             <span style={{ color: "white", textDecoration: "underline", cursor: "pointer" }} onClick={openDialog}>
