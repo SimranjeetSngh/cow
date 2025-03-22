@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5d8b3e5.css",
-    "main.js": "/static/js/main.36039360.js",
+    "main.css": "/static/css/main.5a795869.css",
+    "main.js": "/static/js/main.347b0453.js",
     "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
-    "static/media/Services.png": "/static/media/Services.d548a8641e3409d19e28.png",
-    "static/media/About us 1.png": "/static/media/About us 1.bfd3f80a19b4506bf548.png",
-    "static/media/About us 2.png": "/static/media/About us 2.97720de846083e38fc26.png",
-    "static/media/About us 3.png": "/static/media/About us 3.12d24da21afc75708965.png",
+    "static/media/About us 2.png": "/static/media/About us 2.215cef14c7a15b9d5fde.png",
+    "static/media/About us 3.png": "/static/media/About us 3.c4a478b30f2c6e968a71.png",
+    "static/media/About us 1.png": "/static/media/About us 1.6c978e597d4c48946a23.png",
+    "static/media/Services.png": "/static/media/Services.f37a2a9cdc02d8dbc1a2.png",
     "static/media/Hp.jpg": "/static/media/Hp.6fc21090ddedeaaf1532.jpg",
     "static/media/COW Design-05.jpg": "/static/media/COW Design-05.4b29c09f8245a8928d47.jpg",
     "index.html": "/index.html",
-    "main.d5d8b3e5.css.map": "/static/css/main.d5d8b3e5.css.map",
-    "main.36039360.js.map": "/static/js/main.36039360.js.map",
+    "main.5a795869.css.map": "/static/css/main.5a795869.css.map",
+    "main.347b0453.js.map": "/static/js/main.347b0453.js.map",
     "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5d8b3e5.css",
-    "static/js/main.36039360.js"
+    "static/css/main.5a795869.css",
+    "static/js/main.347b0453.js"
   ]
 }
