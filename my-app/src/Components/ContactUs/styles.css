@@ -83,29 +83,56 @@ button {
 }
 
 @media (max-width: 768px) {
+  .contact-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem; /* Consistent size for all mobile screens */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
   .contact-form {
-    width: 80%;
+    width: 85%; /* Reduce width for better fit */
+    max-width: 320px; /* Prevent it from being too large */
+    gap: 10px; /* Reduce spacing */
   }
 
   .form-group {
     flex-direction: column;
+    gap: 5px; /* Compact spacing */
   }
 
-  select, input {
+  input, textarea, select {
     width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
   }
 
-  h1 {
-    width: 100%;
-    text-align: center;
+  textarea {
+    height: 100px; /* Smaller message box */
   }
 
-  .contact-container {
-    align-items: center;
+  button {
+    padding: 10px;
+    font-size: 1rem;
   }
 
   .contact-info {
     width: 100%;
     text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
   }
 }
+

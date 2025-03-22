@@ -24,13 +24,12 @@ function About() {
       {/* Section 1 */}
       <section className="about-section">
         <picture>
-          <source  srcset={desktopAbout1} />
           <img src={desktopAbout1} alt="Section 1 Background" className="background-image" />
         </picture>
         <div className="overlay">
           <p>
-            We are not an AD agency, <br /> but an ADD agency that adds long-term value 
-            <br />to elevate your brands to greater heights.
+            We are not an AD agency, <br />but an ADD agency that adds long-term value 
+            <br />to elevate your brand to greater heights.
           </p>
         </div>
       </section>
@@ -38,13 +37,12 @@ function About() {
       {/* Section 2 */}
       <section className="about-section">
         <picture>
-          <source  srcset={desktopAbout2} />
           <img src={desktopAbout2} alt="Section 2 Background" className="background-image" />
         </picture>
         <div className="overlay">
           <p>
-            Boosting your businessis our business.<br /> Because nothing the cow produces ever go to waste,
-            <br />even the waste is precious manure.
+            Boosting your business is our business.<br /> Because nothing the cow produces ever go to waste.
+            <br />Even the waste is precious manure.
           </p>
         </div>
       </section>
@@ -52,7 +50,6 @@ function About() {
       {/* Section 3 */}
       <section className="about-section about-section-custom">
         <picture>
-          <source  srcset={desktopAbout3} />
           <img src={desktopAbout3} alt="Section 3 Background" className="background-image" />
         </picture>
         <div className="custom-overlay">
