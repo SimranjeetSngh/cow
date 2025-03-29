@@ -4,16 +4,7 @@ import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
   const form = useRef()
-  const [animate, setAnimate] = useState(false);
   
-    useEffect(() => {
-      // Trigger animation after component mounts
-      setAnimate(true);
-      
-      // Store in sessionStorage that user has visited
-      sessionStorage.setItem('hasVisitedContact', 'true');
-    }, []);;
-
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
