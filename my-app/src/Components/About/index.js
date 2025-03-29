@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
-import desktopAbout1 from "../../Images/About us 1.png"; // Desktop version
-import desktopAbout2 from "../../Images/About us 2.png";
-import desktopAbout3 from "../../Images/About us 3.png";
+import desktopAbout1 from "../../Images/Aboutus1.jpeg"; // Desktop version
+import desktopAbout2 from "../../Images/Aboutus2.jpeg";
+import desktopAbout3 from "../../Images/Aboutus.jpeg";
 import brandImage from "../../Images/brands/COW Design-05.jpg";
 import { Dialog, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -13,6 +13,14 @@ function About() {
   const openDialog = () => setDialogOpen(true);
   const closeDialog = () => setDialogOpen(false);
 
+  const [animate, setAnimate] = useState(false);
+  useEffect(() => {
+    // Trigger animation after component mounts
+    setAnimate(true);
+    
+    // Store in sessionStorage that user has visited
+    sessionStorage.setItem('hasVisited', 'true');
+  }, []);
   const openMediaDialog = () => {
     setMediaDialog(true)
   }
@@ -26,7 +34,7 @@ function About() {
         <picture>
           <img src={desktopAbout1} alt="Section 1 Background" className="background-image" />
         </picture>
-        <div className="overlay">
+        <div className={`overlay ${animate ? 'animate-text' : ''}`}>
           <p>
             We are not an AD agency, <br />but an ADD agency that adds long-term value 
             <br />to elevate your brand to greater heights.
@@ -39,7 +47,7 @@ function About() {
         <picture>
           <img src={desktopAbout2} alt="Section 2 Background" className="background-image" />
         </picture>
-        <div className="overlay">
+        <div className={`overlay ${animate ? 'animate-text' : ''}`}>
           <p>
             Boosting your business is our business.<br /> Because nothing the cow produces ever go to waste.
             <br />Even the waste is precious manure.
@@ -52,7 +60,7 @@ function About() {
         <picture>
           <img src={desktopAbout3} alt="Section 3 Background" className="background-image" />
         </picture>
-        <div className="custom-overlay">
+        <div className={`custom-overlay ${animate ? 'animate-text' : ''}`}>
           <h1>SATYEN PARAB</h1>
           <h2>Founder and Chief Creative Cow</h2>
           <p>
