@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 
 const ServicePage = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation after component mounts
+    setAnimate(true);
+    
+    // Store in sessionStorage that user has visited
+    sessionStorage.setItem('hasVisitedService', 'true');
+  }, []);
+
   return (
     <div className="service-container">
-      <div className="service-overlay">
+      <div className={`service-overlay ${animate ? 'animate-text' : ''}`}>
         <div className="service-content">
           <div className="service-column">
             <h2>ADVERTISING</h2>
