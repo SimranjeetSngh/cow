@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a795869.css",
-    "main.js": "/static/js/main.347b0453.js",
+    "main.css": "/static/css/main.a7764098.css",
+    "main.js": "/static/js/main.abfa9280.js",
     "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
-    "static/media/About us 2.png": "/static/media/About us 2.215cef14c7a15b9d5fde.png",
-    "static/media/About us 3.png": "/static/media/About us 3.c4a478b30f2c6e968a71.png",
-    "static/media/About us 1.png": "/static/media/About us 1.6c978e597d4c48946a23.png",
-    "static/media/Services.png": "/static/media/Services.f37a2a9cdc02d8dbc1a2.png",
-    "static/media/Hp.jpg": "/static/media/Hp.6fc21090ddedeaaf1532.jpg",
+    "static/media/background.mp4.mp4": "/static/media/background.mp4.93ae989e46f98b676b76.mp4",
+    "static/media/Aboutus1.jpeg": "/static/media/Aboutus1.ae6542d599d8195ab4c1.jpeg",
+    "static/media/Aboutus.jpeg": "/static/media/Aboutus.a8e5ac8f3b84e3e8e285.jpeg",
+    "static/media/Services.jpeg": "/static/media/Services.17fa4c2aa4dbdb17920c.jpeg",
+    "static/media/Aboutus2.jpeg": "/static/media/Aboutus2.8e06dd9aea8797663798.jpeg",
     "static/media/COW Design-05.jpg": "/static/media/COW Design-05.4b29c09f8245a8928d47.jpg",
     "index.html": "/index.html",
-    "main.5a795869.css.map": "/static/css/main.5a795869.css.map",
-    "main.347b0453.js.map": "/static/js/main.347b0453.js.map",
+    "main.a7764098.css.map": "/static/css/main.a7764098.css.map",
+    "main.abfa9280.js.map": "/static/js/main.abfa9280.js.map",
     "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a795869.css",
-    "static/js/main.347b0453.js"
+    "static/css/main.a7764098.css",
+    "static/js/main.abfa9280.js"
   ]
 }
