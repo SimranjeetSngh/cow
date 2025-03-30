@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import desktopAbout1 from "../../Images/Aboutus1.jpeg"; // Desktop version
 import desktopAbout2 from "../../Images/Aboutus2.jpeg";
@@ -13,14 +13,7 @@ function About() {
   const openDialog = () => setDialogOpen(true);
   const closeDialog = () => setDialogOpen(false);
 
-  const [animate, setAnimate] = useState(false);
-  useEffect(() => {
-    // Trigger animation after component mounts
-    setAnimate(true);
-    
-    // Store in sessionStorage that user has visited
-    sessionStorage.setItem('hasVisited', 'true');
-  }, []);
+ 
   const openMediaDialog = () => {
     setMediaDialog(true)
   }
@@ -34,7 +27,7 @@ function About() {
         <picture>
           <img src={desktopAbout1} alt="Section 1 Background" className="background-image" />
         </picture>
-        <div className={`overlay ${animate ? 'animate-text' : ''}`}>
+        <div className="overlay">
           <p>
             We are not an AD agency, <br />but an ADD agency that adds long-term value 
             <br />to elevate your brand to greater heights.
@@ -47,7 +40,7 @@ function About() {
         <picture>
           <img src={desktopAbout2} alt="Section 2 Background" className="background-image" />
         </picture>
-        <div className={`overlay ${animate ? 'animate-text' : ''}`}>
+        <div className="overlay">
           <p>
             Boosting your business is our business.<br /> Because nothing the cow produces ever go to waste.
             <br />Even the waste is precious manure.
@@ -60,7 +53,7 @@ function About() {
         <picture>
           <img src={desktopAbout3} alt="Section 3 Background" className="background-image" />
         </picture>
-        <div className={`custom-overlay ${animate ? 'animate-text' : ''}`}>
+        <div className="custom-overlay">
           <h1>SATYEN PARAB</h1>
           <h2>Founder and Chief Creative Cow</h2>
           <p>
