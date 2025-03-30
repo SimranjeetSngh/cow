@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import desktopAbout1 from "../../Images/Aboutus1.jpeg"; // Desktop version
 import desktopAbout2 from "../../Images/Aboutus2.jpeg";
@@ -12,8 +12,29 @@ function About() {
 
   const openDialog = () => setDialogOpen(true);
   const closeDialog = () => setDialogOpen(false);
+  useEffect(() => {
+  
+    const elements = document.querySelectorAll(".animate-on-scroll");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+        
+    
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          } 
+       
+        });
+      },
+      { threshold: 0.1 } // Lower threshold to trigger animation earlier
+    );
+  
+    elements.forEach((el) => observer.observe(el));
+  
+    return () => elements.forEach((el) => observer.unobserve(el));
+  }, []);
 
- 
   const openMediaDialog = () => {
     setMediaDialog(true)
   }
@@ -27,7 +48,7 @@ function About() {
         <picture>
           <img src={desktopAbout1} alt="Section 1 Background" className="background-image" />
         </picture>
-        <div className="overlay">
+        <div className="overlay animate-on-scroll">
           <p>
             We are not an AD agency, <br />but an ADD agency that adds long-term value 
             <br />to elevate your brand to greater heights.
@@ -40,7 +61,7 @@ function About() {
         <picture>
           <img src={desktopAbout2} alt="Section 2 Background" className="background-image" />
         </picture>
-        <div className="overlay">
+        <div className="overlay animate-on-scroll">
           <p>
             Boosting your business is our business.<br /> Because nothing the cow produces ever go to waste.
             <br />Even the waste is precious manure.
@@ -53,7 +74,7 @@ function About() {
         <picture>
           <img src={desktopAbout3} alt="Section 3 Background" className="background-image" />
         </picture>
-        <div className="custom-overlay">
+        <div className="custom-overlay animate-on-scroll">
           <h1>SATYEN PARAB</h1>
           <h2>Founder and Chief Creative Cow</h2>
           <p>

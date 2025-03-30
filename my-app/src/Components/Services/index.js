@@ -1,11 +1,13 @@
 import React from "react";
 import "./styles.css";
+import Services from "../../Images/Services.jpeg";
 
 const ServicePage = () => {
-
-  
   return (
     <div className="service-container">
+       <picture>
+          <img src={Services} alt="Section 1 Background" className="background-image" />
+        </picture>
       <div className="service-overlay">
         <div className="service-content">
           <div className="service-column">

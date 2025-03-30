@@ -7,26 +7,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
 }
 input::placeholder, textarea::placeholder {
   color: white;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: "Helvetica Neue LT Com", sans-serif;
   text-align: left;
-  width: 70%;
+  width: 60%;
   margin-bottom: 20px;
   animation: slideIn 0.6s ease-out forwards;
 }
 
 .contact-form {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   animation: slideIn 0.8s ease-out forwards;
 }
 
@@ -80,7 +80,7 @@ button {
 }
 
 .contact-info {
-  width: 70%;
+  width: 60%;
   margin-top: 30px;
   text-align: left;
 }
