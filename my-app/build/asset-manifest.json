@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9238b90.css",
-    "main.js": "/static/js/main.caff491a.js",
+    "main.css": "/static/css/main.23e2b6ee.css",
+    "main.js": "/static/js/main.15b110cb.js",
     "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
-    "static/media/background.mp4.mp4": "/static/media/background.mp4.93ae989e46f98b676b76.mp4",
+    "static/media/cow1.1.mp4": "/static/media/cow1.1.c011248d1a57e6b7d4e3.mp4",
     "static/media/Aboutus1.jpeg": "/static/media/Aboutus1.ae6542d599d8195ab4c1.jpeg",
     "static/media/Aboutus.jpeg": "/static/media/Aboutus.a8e5ac8f3b84e3e8e285.jpeg",
     "static/media/Services.jpeg": "/static/media/Services.17fa4c2aa4dbdb17920c.jpeg",
     "static/media/Aboutus2.jpeg": "/static/media/Aboutus2.8e06dd9aea8797663798.jpeg",
     "static/media/COW Design-05.jpg": "/static/media/COW Design-05.4b29c09f8245a8928d47.jpg",
     "index.html": "/index.html",
-    "main.e9238b90.css.map": "/static/css/main.e9238b90.css.map",
-    "main.caff491a.js.map": "/static/js/main.caff491a.js.map",
+    "main.23e2b6ee.css.map": "/static/css/main.23e2b6ee.css.map",
+    "main.15b110cb.js.map": "/static/js/main.15b110cb.js.map",
     "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9238b90.css",
-    "static/js/main.caff491a.js"
+    "static/css/main.23e2b6ee.css",
+    "static/js/main.15b110cb.js"
   ]
 }

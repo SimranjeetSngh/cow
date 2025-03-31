@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundVideo from '../../videos/background.mp4.mp4'; // Adjust path to your video
+import backgroundVideo from '../../videos/cow1.1.mp4'; // Adjust path to your video
 import   './styles.css';
 
 const Home = () => {
