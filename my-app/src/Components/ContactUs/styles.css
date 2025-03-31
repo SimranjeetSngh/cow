@@ -4,8 +4,6 @@ html, body {
   padding: 0;
   width: 100vw;
   overflow-x: hidden; /* Prevents horizontal scrolling */
-  background-color: black;
-  color: white;
   font-family: "Helvetica Neue LT Com", sans-serif;
 }
 
@@ -19,6 +17,8 @@ html, body {
   justify-content: flex-start;
   padding: 70px 20px 60px; /* Leaves space for header */
   box-sizing: border-box;
+  background-color: black;
+
 }
 
 /* Heading */
@@ -30,6 +30,8 @@ h1 {
   max-width: 800px; /* Aligns with form */
   margin-bottom: 30px;
   animation: slideIn 0.6s ease-out forwards;
+  color: white;
+
 }
 
 /* Contact Form */
@@ -104,6 +106,8 @@ h2 {
   font-size: 1.5rem;
   font-weight: normal;
   animation: slideIn 0.6s ease-out forwards;
+  color: white;
+
 }
 
 /* Animations */
