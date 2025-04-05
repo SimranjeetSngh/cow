@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.23e2b6ee.css",
+    "main.css": "/static/css/main.2099c7b5.css",
     "main.js": "/static/js/main.15b110cb.js",
     "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
     "static/media/cow1.1.mp4": "/static/media/cow1.1.c011248d1a57e6b7d4e3.mp4",
@@ -10,12 +10,12 @@
     "static/media/Aboutus2.jpeg": "/static/media/Aboutus2.8e06dd9aea8797663798.jpeg",
     "static/media/COW Design-05.jpg": "/static/media/COW Design-05.4b29c09f8245a8928d47.jpg",
     "index.html": "/index.html",
-    "main.23e2b6ee.css.map": "/static/css/main.23e2b6ee.css.map",
+    "main.2099c7b5.css.map": "/static/css/main.2099c7b5.css.map",
     "main.15b110cb.js.map": "/static/js/main.15b110cb.js.map",
     "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23e2b6ee.css",
+    "static/css/main.2099c7b5.css",
     "static/js/main.15b110cb.js"
   ]
 }
